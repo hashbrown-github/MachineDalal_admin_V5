@@ -1,0 +1,57 @@
+@media (max-width:1366px) {
+	.logInLeft {
+		width: 60%;
+
+	}
+	.logInOuter {
+		width: 40%;
+
+	}
+
+@media (max-width:1224px) {
+	.searchbox { margin: 0 12px; }
+}
+
+
+@media (max-width:991px) {  
+	.searchbox { margin: 0 30px;width: 40%;}
+}
+
+
+@media (max-width:767px) {
+	#content { width: 100%;}
+	.dashboard_content {padding: 15px;}
+	.profile_btnn em {margin: 0 3px;	}
+	.dropadmincontentNew { left: -120px;}
+	.profile_btnn i img { width: 30px; height: 30px;}
+	.dropdownadmin { margin: 0 0 0 0px; }
+	.number { top: -4px; right: -2px; font-size: 12px;}
+	.searchbox { margin: 0;	width: 100%; position: absolute; bottom: 0;	left: 0; right: 0;}
+	.searchbox { width: 94%; position: absolute; bottom: 20px;	left: 0; right: 0;	margin: 0 auto;}
+	.dashboard_header_top {	padding-bottom: 74px;}
+	.dashboardbar { width: 100%; padding: 0;	height: auto;}
+	.desktopclose {	display: none; }
+	.mobileclose { display: inline-block; padding: 17px 20px 5px; }
+	#sidebar { min-width: 0; max-width: 0; }
+	.mobilehumburger { display: inline-block; }
+	#sidebar { overflow: hidden; }
+	#sidebar.active .menu_dashboard b { display: inline-block; vertical-align: top; }
+	#sidebar.active { min-width: 100%; max-width: 100%; }
+	#sidebar.active ul li a { padding: 10px 10px;text-align: left; font-size: 0.85em; }
+	#sidebar.active ul li a i {	display: inline-block;width: 35px;}
+	#sidebar.active .dashboardbar {	justify-content: end;}
+	.commonboarder { margin:0 0 20px;}
+}
+
+
+
+@media (max-width: 640px) { 
+	.btnHeading h2 { display: block; margin: 0 0 10px; }
+	.btnRight { float: none; }
+	.tools { float: none; display: inline-block;}
+	.btnHeading .btn { float: none; }
+}
+
+
+
+
