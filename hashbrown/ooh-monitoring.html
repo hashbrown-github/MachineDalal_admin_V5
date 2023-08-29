@@ -1,0 +1,2063 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js">
+
+<head>
+    <title>Brands | Hashbrown Systems | Delhi Mumbai Chandigarh Punjab India</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="title" content="Sales and Purchase Order apps for brands, distributors and suppliers.">
+    <meta name="description"
+        content="Websites, Mobile apps and Integrated platforms for direct sales, business customers, buyers and sales reps to send purchase orders and order fulfillment. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <link href="https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/style-old.css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <style>
+        #map {
+            height: 566px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            float: left;
+            overflow: hidden;
+            background-color: #ffffff;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        .listings .item_images a {
+            width: 100%;
+            height: 60px;
+            /*
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  */
+        }
+
+        .listings .item_images.active a,
+        .listings .item_images a:hover,
+        .listings .item_images a:focus {
+            filter: none;
+            transition: .3s;
+        }
+
+        .listings .item_images:first-child a {
+            background: url(images/ooh-monitoring-2/big-bazaar.svg)no-repeat;
+            background-position: center;
+            background-size: auto 15px;
+        }
+
+        .listings .item_images:nth-child(2) a {
+            background: url(images/ooh-monitoring-2/HP_logo.png)no-repeat;
+            background-position: center;
+            background-size: auto 44px;
+        }
+
+        .listings .item_images:nth-child(3) a {
+            background: url(images/ooh-monitoring-2/buffalo.png)no-repeat;
+            background-position: center;
+            background-size: auto 40px;
+        }
+
+        .listings .item_images:nth-child(4) a {
+            background: url(images/ooh-monitoring-2/MC.png)no-repeat;
+            background-position: center;
+            background-size: auto 44px;
+        }
+
+        .listings .item_images:nth-child(5) a {
+            background: url(images/ooh-monitoring-2/BJP.png)no-repeat;
+            background-position: center;
+            background-size: auto 44px;
+        }
+
+        .listings .item_images:nth-child(6) a {
+            background: url("images/ooh-monitoring-2/Shakti-Electronics.png")no-repeat;
+            background-position: center;
+            background-size: auto 6px;
+        }
+
+        .listings .item_images:nth-child(7) a {
+            background: url("images/ooh-monitoring-2/PMUY.png")no-repeat;
+            background-position: center;
+            background-size: auto 35px;
+        }
+
+        .listings .item_images:nth-child(8) a {
+            background: url("images/ooh-monitoring-2/Paytm.svg")no-repeat;
+            background-position: center;
+            background-size: auto 15px;
+        }
+
+        .listings .item_images:nth-child(9) a {
+            background: url("images/ooh-monitoring-2/lulu-group-international.png")no-repeat;
+            background-position: center;
+            background-size: auto 15px;
+        }
+
+        .listings .item_images:nth-child(10) a {
+            background: url("images/ooh-monitoring-2/National-Radio-Electronics.png")no-repeat;
+            background-position: center;
+            background-size: auto 26px;
+        }
+
+        .listings .item_images:nth-child(11) a {
+            background: url("images/ooh-monitoring-2/Xchange.png")no-repeat;
+            background-position: center;
+            background-size: auto 16px;
+        }
+
+        .listings .item_images:nth-child(12) a {
+            background: url("images/ooh-monitoring-2/FBB.svg")no-repeat;
+            background-position: center;
+            background-size: auto 32px;
+        }
+
+        .listings .item_images:nth-child(13) a {
+            background: url("images/ooh-monitoring-2/DLSA.png")no-repeat;
+            background-position: center;
+            background-size: auto 40px;
+        }
+
+        .listings .item_images:nth-child(14) a {
+            background: url("images/ooh-monitoring-2/Kamla-Pasand.png")no-repeat;
+            background-position: center;
+            background-size: auto 44px;
+        }
+
+        .listings .item_images:nth-child(15) a {
+            background: url("images/ooh-monitoring-2/Rajshree.png")no-repeat;
+            background-position: center;
+            background-size: auto 28px;
+        }
+
+        .listings .item_images:nth-child(16) a {
+            background: url("images/ooh-monitoring-2/lg-color-logo.png")no-repeat;
+            background-position: center;
+            background-size: auto 26px;
+        }
+
+        .listings .item_images:nth-child(17) a {
+            background: url("images/ooh-monitoring-2/Bharat_Electronics.png")no-repeat;
+            background-position: center;
+            background-size: auto 16px;
+        }
+
+        .listings .item_images:nth-child(18) a {
+            background: url("images/ooh-monitoring-2/safal.png")no-repeat;
+            background-position: center;
+            background-size: auto 26px;
+        }
+
+        .listings .item_images:nth-child(19) a {
+            background: url("images/ooh-monitoring-2/torrent_gas.png")no-repeat;
+            background-position: center;
+            background-size: auto 15px;
+        }
+
+        .listings .item_images:nth-child(20) a {
+            background: url("images/ooh-monitoring-2/QRS.png")no-repeat;
+            background-position: center;
+            background-size: auto 25px;
+        }
+
+        .item_images span {
+            display: none;
+        }
+
+        a {
+            color: #404040;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #101010;
+        }
+
+        .pad2 {
+            padding: 20px;
+        }
+
+        .quiet {
+            color: #888;
+        }
+
+        .heading {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            min-height: 60px;
+            line-height: 60px;
+            padding: 0 10px;
+        }
+
+        .sidebar {
+            margin: 60px 0 0;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            overflow-X: scroll;
+        }
+
+        .listings {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            gap: 0 15px;
+            flex-wrap: wrap;
+        }
+
+        .listings .item_images {
+            background-color: #fff;
+            border: 1px solid #DEDEDE;
+            border-radius: 3px;
+            width: 58px;
+            height: 58px;
+            margin: 0;
+            padding: 3px;
+            text-align: center;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .listings .item_images.active {
+            border-bottom: 2px solid #000;
+        }
+
+        .mCSB_horizontal.mCSB_inside>.mCSB_container {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+            height: 10px;
+            top: auto;
+            background: #f7f7f7;
+        }
+
+        .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+            margin: 3px auto;
+        }
+
+        .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+            background-color: rgb(0 0 0 / 20%);
+        }
+
+        .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover {
+            background-color: rgb(0 0 0 / 30%);
+        }
+
+        .mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+        .mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+            background-color: rgb(0 0 0 / 30%) !important;
+        }
+
+        .listings .item_images .title {
+            display: block;
+            color: rgb(0 0 0 / 0%);
+            font-weight: 700;
+        }
+
+        .listings .item_images .title small {
+            font-weight: 400;
+        }
+
+        /* Marker tweaks */
+        .leaflet-popup-close-button {
+            display: none;
+        }
+
+        .leaflet-popup-content {
+            font: 400 12px/20px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+            padding: 8px;
+            max-width: 250px !important;
+            min-width: 150px !important;
+            box-shadow: 0 9px 10px rgb(0 0 0 / 16%)
+        }
+
+        .leaflet-popup-content p {
+            font: 400 12px/20px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+        }
+
+        .leaflet-popup-content-wrapper {
+            padding: 0;
+        }
+
+        .leaflet-popup-content h3 {
+            background: #e20613;
+            color: #fff;
+            margin: 0;
+            display: block;
+            padding: 10px;
+            border-radius: 3px 3px 0 0;
+            font-weight: 700;
+            margin-top: -15px;
+        }
+
+        .leaflet-popup-content div {
+            padding: 10px;
+        }
+
+        .leaflet-container .leaflet-marker-icon {
+            cursor: pointer;
+        }
+
+        .leaflet-marker-pane .leaflet-marker-icon:not(.customIcon) {
+            display: none;
+        }
+
+        .flex-container a:active,
+        .flexslider a:active,
+        .flex-container a:focus,
+        .flexslider a:focus {
+            outline: none
+        }
+
+        .slides,
+        .flex-control-nav,
+        .flex-direction-nav {
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+    </style>
+</head>
+
+<body class="hashBody">
+    <div class="outer_main">
+        <!-- ===================================== Start Header Section ======================================== -->
+        <header class="top_header">
+            <div class="hash-header">
+                <div class="container">
+                    <div class="top-menu-bar">
+                        <div class="top-menu-left">
+                            <a href="#">Hashbrown Systems Private Limited.</a>
+                        </div>
+                        <div class="top-menu-right">
+                            <ul class="topHead_list">
+                                <li><a href="#"> Portfolio </a></li>
+                                <li><a href="#"> Resources </a></li>
+                                <li><a href="#"> Case Studies </a></li>
+                                <li><a href="#"> OOH </a></li>
+                                <li><a href="#"> Blog </a></li>
+                                <li><a href="#"> Contact </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="second_header">
+            <div class="hash-header2">
+                <div class="container">
+                    <div class="second_header1">
+                        <div class="second_header11">
+                            <ul>
+                                <li>
+                                    <a href="https://hashbrown.com/">
+                                        <img src="https://Hashbrown.azureedge.net/hashbrownpicture/logohashbrown.png"
+                                            alt="Hashbrown Logo" />
+                                    </a>
+                                </li>
+                                <li style="display: none;">
+                                    <img src="images/ooh-monitoring-2/sales-and-distribution/Institutional-Sales.svg"
+                                        alt="Sales & Distribution" />
+                                    <p>Sales & Distribution</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="second_header12">
+                            <ul class="second_head121">
+                                <li>
+                                    <a href="#">Services</a>
+                                    <ul class="second_head1211">
+                                        <li>
+                                            <a href="#">
+                                                <h5>Intelligence &amp; Analytics</h5>
+                                                <p>Data intelligence and analytics services to help businesses take
+                                                    informed decisions. </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Application Development</h5>
+                                                <p>Design, development and deployment of end to end enterprise
+                                                    applications for Web and mobile. </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Mobile Development</h5>
+                                                <p>Native, high performing enterprise mobile application development for
+                                                    iOS and Android.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Business Solutions</h5>
+                                                <p>Intelligent software solutions, platforms and tools across industries
+                                                    for better management of sales, marketing and operations. </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Location Intelligence</h5>
+                                                <p>Cloud based mapping software providing location analytics enabling
+                                                    users to optimize business opportunities.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Cloud Services</h5>
+                                                <p>Secure cloud solutions to help businesses scale in a fast, reliable
+                                                    and economical manner.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Consulting</h5>
+                                                <p>Personalized software consulting services and solutions by an in
+                                                    house expert team.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Traffic Analytics</h5>
+                                                <p>Comprehensive OOH advertising solution for agencies, brands and media
+                                                    owners for effective marketing planning.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Media Campaign Planning</h5>
+                                                <p>A complete media and campaign planning solution for media agencies,
+                                                    marketing planners, brands and advertisers.</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Industries</a>
+                                    <ul class="second_head1211">
+                                        <li>
+                                            <a href="#">
+                                                <h5>Intelligence &amp; Analytics</h5>
+                                                <p>Data intelligence and analytics services to help businesses take
+                                                    informed decisions. </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Financial Services</h5>
+                                                <p>Value creation and improved efficiency with financial automation
+                                                    tools.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Institutional Sales</h5>
+                                                <p>Smartphone application and platform for sales, purchasing and order
+                                                    management.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>OOH</h5>
+                                                <p>Complete suite of OOH media campaign planning, monitoring/audit and
+                                                    analytics solutions.</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Products</a>
+                                    <ul class="second_head1211">
+                                        <li>
+                                            <a href="#">
+                                                <h5>Purchasing.ai</h5>
+                                                <p>A software for order generation and daily purchasing.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Locationwise</h5>
+                                                <p>A location verification solution that turns images into tamper-proof
+                                                    evidence.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>Machinedalal.com</h5>
+                                                <p>An online marketplace for print and graphic machinery.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <h5>OOH</h5>
+                                                <p>Outdoor media monitoring software to manage campaigns, vendors and
+                                                    clients.</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ================== End Header Section ========================= -->
+        <!-- START brands_banner -->
+        <section class="brands_banner">
+            <div class="brandsBanner_cell">
+                <div class="container">
+                    <div class="banner_txt">
+                        <h1>Run a successful Out-of-home Campaign with Hashbrown</h1>
+                        <h2>Manage your ooh advertising, retail branding and ATL and BTL marketing.</h2>
+                        <p>Plan, Execute & Manage Multiple Campaigns, Monitor Performance and Optimize Results with with
+                            Hashbrown’s proprietary ooh monitoring system.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END brands_banner -->
+
+        <!-- START brandsMap -->
+        <section class="brandsMap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="sidebarDetails">
+                            <h2>Reduce Pilferage, Improve Performance and Achieve Marketing Goals by keeping a
+                                360-degree view of your entire campaign with,</h2>
+                            <ul>
+                                <li>Location & Address, City, State</li>
+                                <li>Time and Date</li>
+                                <li>Quality of the Media</li>
+                                <li>Clarity of Message for every media site</li>
+                            </ul>
+                            <p>Our tamper-proof methodology ensures 100% compliance.</p>
+                            <p>Our clients manage over 200,000+ locations all over India in real-time.</p>
+                            <p>Campaigns run through our process have never failed an external or internal audit.</p>
+                            <p>We have built a circle of accountability to ensure delivery of services and maximum
+                                return on expenditure</p>
+                            <p class="special">The Brand Manage App keeps you in constant contact with your Ooh campaign
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="mapOuter">
+                            <div id="map" class="map"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sidebar content">
+                            <ul id="listings" class="listings"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END brandsMap -->
+
+
+
+        <!-- MODEL EDIT PROFILE BEGIN -->
+        <div class="modal fade" id="mapImage_preview" tabindex="-1" role="dialog"
+            aria-labelledby="mapImage_previewLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content imagePreview_model">
+                    <div class="modal-header">
+                        <!-- <h3 class="modal-title" id="mapImage_previewLabel">Image Preview</h3> -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body addAddress_Form">
+                        <img src="" alt="" id="image__preview" />
+                    </div>
+                    <!-- <div class="modal-footer">
+                <button type="button" class="waves-effect waves-light bg-red black-btn" data-dismiss="modal">Cancel</button>
+            </div> -->
+                </div>
+            </div>
+        </div>
+        <!--======== MODEL EDIT PROFILE END ========-->
+
+        <!-- START maximazeMain -->
+        <section class="maximazeMain">
+            <h2 class="maxOOH">OOH</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="headMax">
+                            <h2>Maximize your OOH / ATL / BTL Advertising and Marketing Campaigns</h2>
+                            <p>Improve your Out-of-home advertising campaign performance with Location Intelligence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                        <div class="maxLeft">
+                            <h5>Data-driven Approach</h5>
+                            <p>Rely on real-world data to make better decisions & derive better results.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-12">
+                        <div class="maxRight">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="maxRightInner">
+                                        <h4>Improved Targeting</h4>
+                                        <p>Target your ideal audience by location, demographics, and other criteria</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="maxRightInner">
+                                        <h4>Geo-Targeting</h4>
+                                        <p>Target specific geographical areas to reach your TG and maximize your
+                                            campaign impact</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="maxRightInner">
+                                        <h4>Demographic Insights</h4>
+                                        <p>Get insights into the demographics of your audience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maxRight">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="maxRightInner">
+                                        <h4>Organized Data</h4>
+                                        <p>Get organized campaign data into an easy-to-use dashboard, allowing you to
+                                            track progress and make data-driven decisions</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="maxRightInner">
+                                        <h4>Transparency</h4>
+                                        <p>Gain complete visibility into your campaign performance with transparent
+                                            reporting and analytics</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="maxRightInner">
+                                        <h4>Location Verification</h4>
+                                        <p>Verify the location of your ads in real time, ensuring they are displayed in
+                                            the right places</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maxRight">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="maxRightInner">
+                                        <h4>Campaign Optimization</h4>
+                                        <p>Optimize your campaigns by adjusting ad placement and other parameters</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="maxRightInner">
+                                        <h4>Time and Cost Efficiency</h4>
+                                        <p>Save time and money by streamlining campaign planning and monitoring
+                                            processes</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="maxRightInner">
+                                        <h4>Comprehensive Reporting</h4>
+                                        <p>Access detailed and customizable reports that provide a clear picture of your
+                                            campaign’s performance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maxRight">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="maxRightInner">
+                                        <h4>Improved Performance</h4>
+                                        <p>Increase the performance of your campaigns with a data-driven approach and
+                                            monitoring</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="maxRightInner">
+                                        <h4>Feet On Ground</h4>
+                                        <p>Get first-hand insights from field executives on the placement, visibility,
+                                            and impact of campaigns in real-world settings</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="maxRightInner">
+                                        <h4>Nationwide Audits</h4>
+                                        <p>Derive insights from nationwide audits of all the advertising displays to
+                                            measure the effectiveness of your campaign.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    </section>
+    <!-- END maximazeMain -->
+
+
+    <!-- START miseMain -->
+    <section class="miseMain">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="headMax">
+                        <h2>Maximize your OOH / ATL / BTL Advertising and Marketing Campaigns</h2>
+                        <p>Improve your Out-of-home advertising campaign performance with Location Intelligence</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="miseInner">
+                        <ul>
+                            <li>
+                                <img class="img-fluid" src="images/ooh-monitoring-2/urban-locations.svg" alt="Hashbrown" />
+                                <p>Location</p>
+                            </li>
+                            <li>
+                                <img class="img-fluid" src="images/ooh-monitoring-2/urban-locations.svg" alt="Hashbrown" />
+                                <p>Location</p>
+                            </li>
+                            <li>
+                                <img class="img-fluid" src="images/ooh-monitoring-2/urban-locations.svg" alt="Hashbrown" />
+                                <p>Location</p>
+                            </li>
+                            <li>
+                                <img class="img-fluid" src="images/ooh-monitoring-2/urban-locations.svg" alt="Hashbrown" />
+                                <p>Location</p>
+                            </li>
+                            <li>
+                                <img class="img-fluid" src="images/ooh-monitoring-2/urban-locations.svg" alt="Hashbrown" />
+                                <p>Location</p>
+                            </li>
+                            <li>
+                                <img class="img-fluid" src="images/ooh-monitoring-2/urban-locations.svg"  alt="Hashbrown" />
+                                <p>Location</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="miseOuter">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="miseLeft">
+                            <h4>Plusieurs variations</h4>
+                            <h3>mise aune opinion repandue</h3>
+                            <p>Depuis longtemps que travailler avec du texte lisible et contenant du sens est source de
+                                distractions, et empêche de se concentrer sur la mise en page elle-même.
+                                L’avantage du Lorem Ipsum sur un texte générique comme ‘Du texte. Du texte. Du texte.’
+                                est qu’il possède une distribution de lettres plus ou moins normale,
+                                et en tout cas comparable avec celle du français standard.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="miseRight">
+                            <img class="img-fluid" src="images/ooh-monitoring-2/mise.png" alt="Hashbrown" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END miseMain -->
+
+
+    <!-- START outHomeMain -->
+    <section class="outHomeMain">
+        <div class="outHomeRight">
+            <img class="img-fluid home_Main" src="images/ooh-monitoring-2/out-home.png" alt="Hashbrown" />
+            <img class="img-fluid home_1366" src="images/ooh-monitoring-2/out-home-1366.png" alt="Hashbrown" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="outHomeLeft">
+                        <h4>Get Out of the World Results from your</h4>
+                        <h3>Out-of-Home Campaigns</h3>
+                        <a href="https://hashbrown.com/case-studies/hashbrown-bubna-advertising-ooh-audit">Know More ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END outHomeMain -->
+
+
+    <!-- START identifyMain -->
+    <section class="identifyMain">
+        <div class="container">
+            <div class="identifyOuter">
+                <div class="identifyLeft">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="caseSec511">
+                                    <h4>Karnataka</h4>
+                                </div>
+                                <img src="images/ooh-monitoring-2/Ad-misisng-Mysore-Karnataka.jpg" alt="Karnataka" />
+                            </li>
+                            <li>
+                                <div class="caseSec511">
+                                    <h4>Meerut</h4>
+                                </div>
+                                <img src="images/ooh-monitoring-2/Damaged-Media-Meerut-UP.jpg" alt="Meerut" />
+                            </li>
+                            <li>
+                                <div class="caseSec511">
+                                    <h4>Varanasi</h4>
+                                </div>
+                                <img src="images/ooh-monitoring-2/Damaged-Media-Varanasi-UP.jpg" alt="Varanasi" />
+                            </li>
+                            <li>
+                                <div class="caseSec511">
+                                    <h4>Meerut</h4>
+                                </div>
+                                <img src="images/ooh-monitoring-2/Double-Selling-Meerut-UP.jpg" alt="Meerut" />
+                            </li>
+                            <li>
+                                <div class="caseSec511">
+                                    <h4>Chaattisgarh</h4>
+                                </div>
+                                <img src="images/ooh-monitoring-2/Media-Missing-Bastar-Chaattisgarh.jpg"
+                                    alt="Chaattisgarh" />
+                            </li>
+                            <li>
+                                <div class="caseSec511">
+                                    <h4>Karnataka</h4>
+                                </div>
+                                <img src="images/ooh-monitoring-2/Media-Missing-Belgaum-Karnataka.jpg"
+                                    alt="Karnataka" />
+                            </li>
+                            <li>
+                                <div class="caseSec511">
+                                    <h4>Garhwal</h4>
+                                </div>
+                                <img src="images/ooh-monitoring-2/Media-Missing-Garhwal.jpg" alt="Garhwal" />
+                            </li>
+                            <li>
+                                <div class="caseSec511">
+                                    <h4>Garhwal</h4>
+                                </div>
+                                <img src="images/ooh-monitoring-2/Media-Torn-Garhwal-UK.jpg" alt="Garhwal" />
+                            </li>
+                            <li>
+                                <div class="caseSec511">
+                                    <h4>Rajasthan</h4>
+                                </div>
+                                <img src="images/ooh-monitoring-2/No-Site-Jaipur-Rajasthan.jpg" alt="Rajasthan" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="identifyRight">
+                    <h3>Identify Loopholes & Scope for Improvement</h3>
+                    <p>With <span>Hashbrown Systems’</span> Ooh data tools and applications you can identify and tackle
+                        challenges and uncover new opportunities.</p>
+                    <ul>
+                        <li>Pilferage</li>
+                        <li>Double selling</li>
+                        <li>Inaccurate targeting</li>
+                        <li>Insufficient data</li>
+                        <li>Lack of tracking measures for efficiency and performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END identifyMain -->
+
+    <!-- START howDoesMain -->
+    <section class="howDoesMain">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="headMax">
+                        <h2>How does it work?</h2>
+                        <p>Track and Manage Your Campaigns in Real-Time with Our User-Friendly System</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-12 howDoesRES">
+                    <div class="howDoesInner">
+                        <h4>On Ground Data</h4>
+                        <p>Transmit location data through our field application, Moshpit. The information is verifiable
+                            and tamper proof.</p>
+                        <img class="img-fluid" src="images/ooh-monitoring-2/on-ground.svg" alt="Hashbrown" />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 howDoesRES">
+                    <div class="howDoesInner">
+                        <h4>Advertiser Dashboard & Brand App</h4>
+                        <p>The advertiser has a 360-degree view of the campaign and gets up-to-date information by way
+                            of regular visits by the internal auditing team and through vendors & managers can manage
+                            users,
+                            build plans, generate reports and delegate effectively to their field team, media owners,
+                            media agencies and / or other teams that they engage to perform their audits</p>
+                        <img class="img-fluid" src="images/ooh-monitoring-2/advertiser.svg" alt="Hashbrown" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-12 howDoesRES">
+                    <div class="howDoesInner">
+                        <h4>Agency and Vendor Tools</h4>
+                        <p>Data-Driven and Location Intelligent software systems and applications for media agencies and
+                            owner to better serve their customers.</p>
+                        <img class="img-fluid" src="images/ooh-monitoring-2/agency.svg" alt="Hashbrown" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END howDoesMain -->
+
+    <!-- START whyHashNewMain -->
+    <section class="whyHashNewMain">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="whyHashNewLeft">
+                        <h2>Why Hashbrown?</h2>
+                        <div class="whyHashNewOuter">
+                            <div class="whyHashNewLeftInner">
+                                <h3>Experienced</h3>
+                                <p>With over decade of experience ushering in new technology in this sector. We are the
+                                    global standards when it comes to authenticity and clarity in Ooh Advertising.</p>
+                            </div>
+                            <div class="whyHashNewLeftInner">
+                                <h3>Entrusted</h3>
+                                <p>More brands trust us each day with their campaign management, data requirements,
+                                    location intelligence for campaign planning, delegation of duties and allocation of
+                                    funds.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="whyHashNewRight">
+                        <img class="img-fluid" src="images/ooh-monitoring-2/why-hash-new.svg" alt="Hashbrown" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END whyHashNewMain -->
+    <!-- START readyTransformMain -->
+    <section class="readyTransformMain">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12 col-12">
+                    <div class="readyTransform">
+                        <h3>Ready to transform the way you plan and run your OOH advertising campaigns?</h3>
+                        <a href="javascript:void(0)" class="btn btnBlack_2">Yes</a>
+                        <a href="javascript:void(0)" class="btn btnWhite_2">I need more convincing and would like to
+                            learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END readyTransformMain -->
+
+
+    <!-- START contactus-->
+    <section class="subsection contactus-margin new-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-12 contactPost">
+                    <h3 class="MainHeading new-heading-cont">Contact Us</h3>
+                    <p>We are constantly evolving, innovating and creating new products and services. If you have a
+                        specific problem that needs attention or you would just like to understand more about the
+                        scientific methods we employ, drop us a message and we will get back to you.</p>
+                    <p class="contact-para-features"><b>Hashbrown Systems</b> is always at your beck and call.</p>
+                    <div class="contactBox">
+                        <div class="send-message contactFormBox">
+                            <div class="input-field">
+                                <label class="active">Name*</label>
+                                <input name="Name" type="text" class="validate" autocomplete="off" placeholder="Name" />
+                                <span class="controltext error" style="visibility:visible;">A name please?</span>
+                            </div>
+                            <div class="input-field">
+                                <label class="active">Email*</label>
+                                <input name="email" type="text" class="validate" autocomplete="off"
+                                    placeholder="Email" />
+                                <span class="controltext error" style="visibility:visible;">Invalid Email</span>
+                            </div>
+                            <div class="input-field">
+                                <label class="active">Business Number</label>
+                                <input name="businessPhone" type="text" class="validate" autocomplete="off"
+                                    placeholder="Business Number" />
+                                <span class="controltext error" style="visibility:visible;">Invalid Mobile Number</span>
+                            </div>
+                            <div class="input-field">
+                                <label class="active">Product/ Service Interested in*</label>
+                                <input name="Product_Service" type="text" class="validate" autocomplete="off"
+                                    placeholder="Product/ Service Interested in" />
+                                <span class="controltext error" style="visibility:visible;">Which product or service are
+                                    you interested in?</span>
+                            </div>
+                            <div class="input-field">
+                                <label class="active">Message*</label>
+                                <textarea name="message" rows="2" cols="20" class="formMessage" autocomplete="off"
+                                    placeholder="Message"></textarea>
+                                <span class="controltext error" style="visibility:visible;">Do articulate your
+                                    thoughts.</span>
+                            </div>
+                            <div class=" marginT30">
+                                <button type="button" class="bg-red bg-black">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END contactus-->
+
+    <!-- START FOOTER-->
+    <footer class="footer-box">
+        <div class="container">
+            <div class="scroll-top-wrapper back-to-top hoverable show">
+                <span class="scroll-top-inner">
+                    <i class="material-icons">keyboard_arrow_up</i>
+                </span>
+            </div>
+            <div class="footerMain">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-12 footer-heading footer-border-bottom">
+                        <h4>Contact us </h4>
+                        <ul>
+                            <li><a href="#">Talk to us </a></li>
+                            <li>
+                                <address>Hashbrown Systems Pvt ltd. Mohali Tower, F-539, First Floor, Industrial Area
+                                    Mohali, Punjab India – 160071</address>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12 col-12 footer-heading footer-border-bottom">
+                        <h4>About Hashbrown </h4>
+                        <ul>
+                            <li><a href="https://hashbrown.com/">Hashbrown Systems </a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Case Studies </a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Sitemap </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-12 footer-heading footer-border-bottom">
+                        <h4>Services </h4>
+                        <ul>
+                            <li><a href="#">Intelligence &amp; Analytics</a> </li>
+                            <li><a href="#">Application Development </a></li>
+                            <li><a href="#">Mobile Development </a></li>
+                            <li><a href="#">Business Solutions</a></li>
+                            <li><a href="#">Cloud Services </a></li>
+                            <li><a href="#">Consulting</a></li>
+                            <li><a href="#">Traffic Analytics</a></li>
+                            <li><a href="#">Media Campaign Planning</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-12 footer-heading footer-border-bottom">
+                        <h4>Industries </h4>
+                        <ul>
+                            <li><a href="#">Financial Services</a> </li>
+                            <li><a href="#">Sales &amp; Distribution</a></li>
+                            <li><a href="#">OOH</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-12 footer-heading">
+                        <h4>Products </h4>
+                        <ul>
+                            <li><a href="#">Purchasing.ai </a></li>
+                            <li><a href="#">Locationwise </a></li>
+                            <li><a href="#">Machinedalal.com</a></li>
+                            <li><a href="#">OOH Monitoring </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_list">
+                <div>
+                    <img src="https://Hashbrown.azureedge.net/hashbrownpicture/logohashbrown.png" alt="Hashbrown Logo" />
+                </div>
+                <div>
+                    <ul class="footerMenu">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER-->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script>
+        L.mapbox.accessToken = 'pk.eyJ1IjoibWVyaWRpYW4wIiwiYSI6ImNqejNxcDhobzA1dmgzb28xeWVpOWE2NDYifQ.o5MPxFVCgW4EIXIOswUdXg';
+        const geojson = [
+            {
+                "type": "FeatureCollection",
+                "features": [
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                72.8343215,
+                                19.4021784
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Big bazar",
+                            "CampaignName": "End of Decade Sale",
+                            "LocationName": "Jelam Bldg. Vasant Nagari",
+                            "Image": "images/ooh-monitoring-2/big-bazar_2.jpg",
+
+                            "LocationCity": "Vasai Vihar"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                72.8314231,
+                                18.9885524
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "HP",
+                            "CampaignName": "HPCL",
+                            "LocationName": "Sonal Super service, Mathuradas mill compound, Delisle Rd, lower parel ",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132200090006466501.jpg",
+                            "Date / Time": "05/12/19 08:43",
+                            "LocationCity": "Maharashtra"
+                        }
+                    },
+
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                72.8011412,
+                                18.9605398
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "HP",
+                            "CampaignName": "HPCL",
+                            "LocationName": "Care Care Centre, Nepean Sea Road",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132194949734763441.jpg",
+                            "Date / Time": "29/11/19 09:56",
+                            "LocationCity": "Maharashtra"
+                        }
+                    },
+
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                75.5762154,
+                                11.7271998
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "HP",
+                            "CampaignName": "KSC,NE,VENUS,HTP,POPULAR and ST GEORGE  Onam",
+                            "LocationName": "KSC_MEKUNNU",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132147484822722471.jpg",
+                            "Date / Time": "05/10/19 11:28",
+                            "LocationCity": "Kerala"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                76.299996,
+                                10.0010986
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "HP",
+                            "CampaignName": "Bismi Home Appliances LLP",
+                            "LocationName": "METRO PILLAR P-554 A",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132146454022755858.jpg",
+                            "Date / Time": "04/10/19 06:50",
+                            "LocationCity": "Kochi"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                72.8318616,
+                                19.3840695
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Buffalo",
+                            "CampaignName": "Varun Dhawan",
+                            "LocationName": "Vasai East Nr. Rly. Ticket Window",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132054977997660423.jpg",
+                            "Date / Time": "20/06/19 09:50",
+                            "LocationCity": "Maharashtra"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                77.2090585,
+                                28.5958852
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "MC",
+                            "CampaignName": "NDMC",
+                            "LocationName": "Tuglak Crescent",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132041000808954604.jpg",
+                            "Date / Time": "04/06/19 05:34",
+                            "LocationCity": "Delhi"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                86.5070166,
+                                21.072497
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "BJP",
+                            "CampaignName": "BJP Odisha Election Campaign",
+                            "LocationName": "chandbali by Pass BY PASS",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132005780935432210.jpg",
+                            "Date / Time": "24/04/19 11:14",
+                            "LocationCity": "Odisa"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                83.4901665,
+                                20.7052772
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "BJP",
+                            "CampaignName": "Bolangir Rally",
+                            "LocationName": "GOPALJI",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/131918337682240090.jpg",
+                            "Date / Time": "13/01/19 06:16",
+                            "LocationCity": "Odisa"
+                        }
+                    },
+
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                72.5444729,
+                                23.0219836
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Shakti Ezone",
+                            "CampaignName": "Shakti EZone OLED OOH",
+                            "LocationName": "Shakti Electronics, Ambavadi",
+                            "LocationCity": "Amedabad",
+                            "Image": "images/ooh-monitoring-2/shakti_1.jpg",
+                            "Date / Time": "31/12/20 11:24"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                84.7959266,
+                                19.301664
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "PMUY",
+                            "CampaignName": "PMUY - Signpost_Odisha",
+                            "LocationName": "Station Road",
+                            "LocationCity": "Brahampur",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132519746387605660.jpg",
+                            "Date / Time": "09/12/20 08:04"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                77.1567686,
+                                28.5900643
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "PMUY",
+                            "CampaignName": "PMUY - Delhi",
+                            "LocationName": "R R Hospital-1",
+                            "LocationCity": "Delhi ",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132516286185117113.jpg",
+                            "Date / Time": "05/12/20 07:57"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                80.2676684,
+                                13.0367166
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "PAYTM",
+                            "CampaignName": "Paytm - MT_16 Oct'20",
+                            "LocationName": "Mylapore tank Railway Station  towards  Luz cornor",
+                            "LocationCity": "Chennai",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132511063233340972.jpg",
+                            "Date / Time": "29/11/20 06:52"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                78.4488913,
+                                17.4164811
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "PAYTM",
+                            "CampaignName": "Paytm - MT_16 Oct'20",
+                            "LocationName": "Banjara Hills Nr Taj Krishna rd",
+                            "LocationCity": "Hyderabad",
+                            "Image": "images/ooh-monitoring-2/paytm_1.jpg",
+                            "Date / Time": "23/11/20 02:58"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                74.6132029,
+                                30.9504885
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "PAYTM",
+                            "CampaignName": "Sonu Electronics-OOH & Pole Kiosks",
+                            "LocationName": "Mall Road-PoleKiosk 15-Morning",
+                            "LocationCity": "Firozpur",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132481751699144784.jpg",
+                            "Date / Time": "26/10/20 08:39"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                75.7918335,
+                                11.2588629
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "PAYTM",
+                            "CampaignName": "EHAM Onam Campaign",
+                            "LocationName": "MAVOOR ROAD-BABY",
+                            "LocationCity": "Kerala",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132445529875406427.jpg",
+                            "Date / Time": "14/09/20 10:29"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                75.7925594,
+                                11.3034123
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "PAYTM",
+                            "CampaignName": "Nandilath G Mart Onam Campaign",
+                            "LocationName": "Vengeri Jun,Calicut",
+                            "LocationCity": "Kerala ",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132445537062033402.jpg",
+                            "Date / Time": "14/09/20 10:41"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                76.3058975,
+                                10.0209783
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "LULU international",
+                            "CampaignName": "LULU Connect",
+                            "LocationName": "Edapally church towards MG Road 4",
+                            "LocationCity": "Kerala ",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132363356650640295.jpg",
+                            "Date / Time": "11/06/20 07:54"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                75.4235006,
+                                11.8376634
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "National Radio Electronics",
+                            "CampaignName": "NRE",
+                            "LocationName": "THOTTADA",
+                            "LocationCity": "Kerala",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132342614931322849.jpg",
+                            "Date / Time": "18/05/20 07:44"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                72.8150172,
+                                19.3648369
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "xchange",
+                            "CampaignName": "Xchange Campaign - Vasai - Virar",
+                            "LocationName": "Near Vijay Sales Vasai Gaon To St.",
+                            "LocationCity": "Vasai Vihar Maharashtra ",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132276058815856676.jpg",
+                            "Date / Time": "02/03/20 06:58"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                72.8152424,
+                                19.3646318
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "FBB",
+                            "CampaignName": "Fbb Has it all - Winter",
+                            "LocationName": "Near D'Mart",
+                            "LocationCity": "Maharashtra",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132258746182126347.jpg",
+                            "Date / Time": "11/02/20 06:03"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                89.4684375,
+                                26.3520354
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "FBB",
+                            "CampaignName": "Coochbehar Store launch",
+                            "LocationName": "Coochbehar Station",
+                            "LocationCity": "West Bengal",
+                            "Image": "images/ooh-monitoring-2/fbb-1.jpg",
+                            "Date / Time": "13/03/20 10:11"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                77.0574097,
+                                28.5809041
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Big bazar",
+                            "CampaignName": "SS5D 2020",
+                            "LocationName": "Dwarka-10-second panel",
+                            "LocationCity": "Delhi",
+                            "Image": "images/ooh-monitoring-2/132245749850162378.jpg",
+                            "Date / Time": "27/01/20 05:03"
+                        }
+                    },
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                88.4263216,
+                                26.7199333
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Big bazar",
+                            "CampaignName": "Siliguri Skystar Launch",
+                            "LocationName": "Panitanki More way to Cosmos Mall",
+                            "LocationCity": "Siliguri",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132286527940474730.jpg",
+                            "Date / Time": "14/03/20 09:46"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                77.1166223,
+                                28.7140553
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Big bazar",
+                            "CampaignName": "Price Leadership-HDLP",
+                            "LocationName": "Rohini West towards Rithala",
+                            "LocationCity": "Delhi",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132287611813690381.jpg",
+                            "Date / Time": "15/03/20 15:53"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                75.5319779,
+                                30.3584901
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "DLSA",
+                            "CampaignName": "Punjab DLSA Monitoring",
+                            "LocationName": "Daily-Front Office-Barnala1",
+                            "LocationCity": "Barnala",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132762398609912212.jpg",
+                            "Date / Time": "16/09/21 04:24"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                79.9780171,
+                                14.4442414
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "DLSA",
+                            "CampaignName": "Andhra Pradesh DLSA Monitoring",
+                            "LocationName": "Daily - Front Office - Nellore",
+                            "LocationCity": "Nellore ",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132555909823902244.jpg",
+                            "Date / Time": "20/01/21 04:36"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                73.7819684,
+                                20.0017834
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "DLSA",
+                            "CampaignName": "Maharashtra DLSA Monitoring",
+                            "LocationName": "Daily - Front Office - Nashik",
+                            "LocationCity": "Nasik",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132539509795391858.jpg",
+                            "Date / Time": "01/01/21 05:03"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                73.8320105,
+                                15.5002186
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "DLSA",
+                            "CampaignName": "Goa DLSA Monitoring",
+                            "LocationName": "Daily - Front Office_2 - Goa",
+                            "LocationCity": "Panaji",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132763296539053337.jpg",
+                            "Date / Time": "17/09/21 05:20"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                92.5665749,
+                                26.6960653
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Kamla Pasand",
+                            "CampaignName": "Kamla Pasand_North-East",
+                            "LocationName": "Market",
+                            "LocationCity": "Assam",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132764315536433150.jpg",
+                            "Date / Time": "18/09/21 09:39"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                75.7754248,
+                                13.3224195
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Kamla Pasand",
+                            "CampaignName": "Kamla Pasand_Karnataka",
+                            "LocationName": "Jyothi Circle Market Road",
+                            "LocationCity": "Karnataka",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132756361908919504.jpg",
+                            "Date / Time": "09/09/21 04:43"
+                        }
+                    },
+
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                70.7939146,
+                                21.9612321
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Rajshree",
+                            "CampaignName": "Rajshree_Gujarat Additional",
+                            "LocationName": "ST  Circle",
+                            "LocationCity": "Gujarat, Gondal",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132763429230803742.jpg",
+                            "Date / Time": "17/09/21 09:02"
+                        }
+                    },
+
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                72.8432464,
+                                21.1576332
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Rajshree",
+                            "CampaignName": "Rajshree_Gujarat Additional",
+                            "LocationName": "Amroli - Udhana Road",
+                            "LocationCity": "Surat",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132739937291291848.jpg",
+                            "Date / Time": "21/08/21 04:28"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                76.3069509,
+                                9.9671582
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "LG",
+                            "CampaignName": "LG_BISMI Connect ",
+                            "LocationName": "TOWARDS VYTTILA KOCHI METRO PILLER NO  822",
+                            "LocationCity": "Ernakulam",
+                            "Image": "images/ooh-monitoring-2/lg_1.jpg",
+                            "Date / Time": "25/08/21 10:42"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                78.1260249,
+                                29.9315257
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "LG",
+                            "CampaignName": "LG OOH:Haridwar_July-Sept 2021",
+                            "LocationName": "Jwalapur, Sector 2 Gate, BHEL",
+                            "LocationCity": "Haridwar",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132762669049911685.jpg",
+                            "Date / Time": "16/09/21 11:55"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                77.0390109,
+                                11.030236
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Bharath Electronics",
+                            "CampaignName": "Bharath Electronics-Coimbatore Airport",
+                            "LocationName": "Coimbatore International Airport 1",
+                            "LocationCity": "Coimbrate ",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132760069679525258.jpg",
+                            "Date / Time": "13/09/21 11:42"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                85.6111358,
+                                21.634105
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "SAFAL",
+                            "CampaignName": "Safal_Odisha",
+                            "LocationName": "Labanya Square",
+                            "LocationCity": "Keonjhar",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132748785417334393.jpg",
+                            "Date / Time": "31/08/21 10:15"
+                        }
+                    },
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                80.1500394,
+                                13.1127576
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "Torrent gas",
+                            "CampaignName": "Torrent Gas-Chennai",
+                            "LocationName": "Ambattur TI Cycle",
+                            "LocationCity": "Chennai",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132738422679598941.jpg",
+                            "Date / Time": "19/08/21 10:24"
+                        }
+                    },
+
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                76.9784052,
+                                8.5139052
+
+                            ]
+                        },
+                        "properties": {
+                            "BrandName": "QRS",
+                            "CampaignName": "QRS Retail: Jan-Mar 2021",
+                            "LocationName": "Lekha, Gokulam, Palottuvila Malayinkeezhu",
+                            "LocationCity": "Triuvananthapuram",
+                            "Image": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132569043212634182.jpg",
+                            "Date / Time": "04/02/21 09:25",
+                            "url": "https://radar.usdatamaps.com/CRBRadar/images/ooh-monitoring-2/Location/132569043212634182.jpg",
+                        }
+                    }
+                ]
+            }
+        ];
+        const map = L.mapbox
+            .map('map')
+            .setView([20.5937, 78.9629], 4.9)
+            .addLayer(L.mapbox.styleLayer('mapbox://styles/meridian0/ckvs0jz6x0lhf14p8s4glfykx'));
+        var lst_name = [];
+        const listings = document.getElementById('listings');
+        var image_preview = document.getElementsByClassName('addAddress_Form');
+        const locations = L.mapbox.featureLayer().addTo(map);
+        locations.setGeoJSON(geojson);
+
+        function setActive(el) {
+            var element = jQuery(el)
+            element.siblings('li').removeClass('active')
+            element.addClass('active')
+        }
+
+        function getLocales(name) {
+            var collection = [];
+            locations.eachLayer(function (locale) {
+                if (locale.feature.properties.BrandName == name) {
+                    collection.push(locale)
+                }
+            })
+            return collection;
+        }
+
+
+        var popup_layer = new L.layerGroup();
+        var markers = [];
+
+        locations.eachLayer((locale) => {
+
+            const prop = locale.feature.properties;
+
+            if (jQuery(listings).find('li a:contains(' + prop.BrandName + ')').length == 1) {
+                // jQuery(listings).append('<li class="item_images ' + slug + '"><a href="#" class="title" data-slug="' + slug + '">' + prop.BrandName + '</a></li>')
+
+                return
+            }
+
+            var slug = _.snakeCase(prop.BrandName);
+
+            // Each marker on the map.
+            let popup = `<div>${prop.BrandName}`;
+            const listing = listings.appendChild(document.createElement('li'));
+            listing.className = 'item_images ' + slug + '';
+            const link = listing.appendChild(document.createElement('a'));
+            link.href = '#';
+            link.className = 'title';
+            link.innerHTML = `${prop.BrandName}`;
+
+            if (prop.phone) {
+                details.innerHTML += ` &middot; ${prop.phoneFormatted}`;
+            }
+            link.onclick = function (e) {
+                e.preventDefault()
+                setActive(listing);
+                map.removeLayer(popup_layer);
+                popup_layer = new L.layerGroup();
+                var data = getLocales(locale.feature.properties.BrandName)
+                if (markers.length) {
+                    markers.map(function (marker) {
+                        map.removeLayer(marker)
+                    })
+                }
+
+                data.forEach(function (item) {
+                    var marker = new L.marker(item.getLatLng(), {
+                        icon: L.icon({
+                            iconUrl: 'images/ooh-monitoring-2/map-dot.png',
+                            iconSize: [20, 20],
+                            // iconAnchor: [12, 10],
+                            // popupAnchor: [-3, -76],
+                            className: 'customIcon'
+                        })
+                    });
+                    marker.addTo(map);
+                    markers.push(marker)
+                    var content = `<p><a href="#" data-toggle="modal" data-target="#mapImage_preview" onclick=image_Preview("${item.feature.properties.Image}")><img id="imagePreview" src="${item.feature.properties.Image}"style="width:100%;height:100px;object-fit:cover"></a></p><p><b>${item.feature.properties.BrandName}<br>${item.feature.properties.CampaignName}<br>${item.feature.properties.LocationName}<br>${item.feature.properties.LocationCity}</b></p>`;
+                    var popupOne = new L.popup();
+                    popupOne.setLatLng(item.getLatLng());
+                    popupOne.setContent(content);
+                    popupOne.openPopup();
+                    popup_layer.addLayer(popupOne);
+                })
+                popup_layer.addTo(map);
+            };
+            locale.bindPopup(popup);
+
+            // locale.setIcon( 
+            //     L.icon({
+            //         iconUrl: 'marker.png',
+            //         iconSize: [56, 56],
+            //         iconAnchor: [28, 28],
+            //         popupAnchor: [0, -34]
+            //     })
+            // );
+
+        });
+
+    </script>
+    <script>
+        function image_Preview(imgSrc) {
+            var previw_link = document.getElementById('image__preview');
+            previw_link.setAttribute('src', imgSrc);
+        }
+    </script>
+
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+        (function ($) {
+            $(window).on("load", function () {
+                $(".content").mCustomScrollbar({
+                    axis: "x",
+                    theme: "dark",
+                    advanced: { autoExpandHorizontalScroll: true }
+                });
+
+
+            });
+        })(jQuery);
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js"></script>
+    <script>
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            slideshow: false
+        });
+    </script>
+
+</body>
+
+</html>
