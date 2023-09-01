@@ -16408,7 +16408,6 @@ ul.feat--list li p {
 .margin_10,
 .sliderCustomsDetail {
     margin-top: 50px;
-    width: 400px;
 }
 
 .features--list ul {
@@ -16418,7 +16417,7 @@ ul.feat--list li p {
 }
 
 .features--list ul li {
-    width: 33.3%;
+    /* width: 33.3%; */
     background-color: #fff;
     margin: 10px;
     padding: 15px;
