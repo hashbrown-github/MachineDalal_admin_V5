@@ -13381,7 +13381,6 @@ h3.MainHeading.new-heading-cont {
     font-size: 15px;
     line-height: 20px;
     cursor: pointer;
-    /* min-width: 120px; */
     display: inline-block;
     border: 0
 }
@@ -15382,7 +15381,7 @@ section.data-services {
     line-height: 21.3px;
     color: #000;
     margin-top: 0;
-    font-family: Segoe-UI
+    font-family: 'SegoeUI-Bold';
 }
 
 .institutional-laptop-heading {
@@ -16412,11 +16411,12 @@ ul.feat--list li p {
 
 .features--list,
 .margin_10 {
-    margin-top: 50px  
+    margin-top: 50px
 }
+
 .sliderCustomsDetail {
     margin-top: 50px;
-    width:540px;
+    width: 540px;
 }
 
 .features--list ul {
@@ -17664,18 +17664,6 @@ section.sales-ecosystem {
     overflow: hidden
 }
 
-/* .slide,
-.slide_group {
-    height: 100%;
-    width: 100%
-}
-
-.slide {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute
-}
- */
 .slide:first-child {
     visibility: visible;
     opacity: 1
@@ -20472,7 +20460,7 @@ span.control_next:hover {
 }
 
 .salesIcon-List ul li img {
-    width: 55px
+    width: 40px
 }
 
 .salesIcon-List ul li h3 {
@@ -20617,7 +20605,7 @@ span.control_next:hover {
 }
 
 .card-home-icon img {
-    width: 50px;
+    width: 40px;
     background: #f7f7f7;
     padding: 0
 }
@@ -20692,7 +20680,7 @@ span.control_next:hover {
     font-size: 16px;
     line-height: 21.3px;
     color: #000;
-    font-family: Segoe-UI
+    font-family: 'SegoeUI-Bold';
 }
 
 .sec-blog-slider__content .institutional-slider-paragraph ul li {
@@ -25175,15 +25163,18 @@ h4 {
     margin-bottom: 0;
     margin-left: 0;
 }
+
 .center {
     padding-top: 60px;
 }
+
 .slider-content img {
     width: 230px;
     height: 371px;
     object-fit: contain;
     margin: 0 auto;
 }
+
 .slider-content span {
     display: block;
     clear: both;
@@ -25196,6 +25187,7 @@ h4 {
     margin-bottom: 35px;
     text-align: center;
 }
+
 .slider-content span:after {
     content: "";
     height: 1px;
@@ -25207,6 +25199,7 @@ h4 {
     transform: translateX(-50%);
     bottom: 0;
 }
+
 .slider-content {
     font-size: 22px;
     line-height: 32px;
@@ -25219,7 +25212,8 @@ h4 {
     text-align: center;
     margin-top: 0;
 }
-.oohCamp-block .slick-prev:before  {
+
+.oohCamp-block .slick-prev:before {
     font-family: 'slick';
     font-size: 25px;
     line-height: 1;
@@ -25229,6 +25223,7 @@ h4 {
     left: 2px;
     -moz-osx-font-smoothing: grayscale;
 }
+
 .oohCamp-block .slick-next:before {
     font-family: 'slick';
     font-size: 20px;
@@ -25240,9 +25235,11 @@ h4 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 img.oohIconsBox1 {
     width: 550px;
 }
+
 @media (max-width: 2200px) {
     .newsletterTxt {
         float: unset;
@@ -41355,16 +41352,16 @@ img.oohIconsBox1 {
     }
 }
 
-
-.input-field .bg-black
-{
-position:relative;}
+.input-field .bg-black {
+    position: relative;
+}
 
 .Loader2 {
- width: 20px;
- Position: absolute;
- right: 12px;
+    width: 20px;
+    Position: absolute;
+    right: 12px;
 }
+
 .media_campagin h1 {
     margin-top: 0;
     font-size: 38px;
@@ -41374,6 +41371,7 @@ position:relative;}
     font-family: SegoeUI-Bold;
     position: relative;
 }
+
 .per--features1 h3 {
     color: #fff;
     margin-top: 0;
@@ -41383,45 +41381,90 @@ position:relative;}
     font-family: SegoeUI-Bold;
     text-align: center;
 }
+
 .per--features1 p {
     color: #fff;
     margin-bottom: 0;
     font-size: 16px;
     line-height: 21.3px;
 }
-/* START lets */
 
-.lets { position: fixed; width: 160px; right: -100px; height: 62px; top: 40%; background: #000; border-radius: 3px 0 0 3px; padding: 20px 20px; cursor: pointer;  transition: all 0.5s ease-in-out 0s; z-index: 9999; }
-
-.letsBuild { width: 160px; right: 0;  background: #000;  border-radius: 3px 0 0 3px; padding: 20px 20px; }
-
-.lets .span { color: #fff; font-family: 'Segoe UI'; display: block; }
-
-.lets a { color: #fff; font-family: 'Segoe UI'; display: none; }
-
-.letsBuild .span { display: none; }
-
-.letsBuild a { display: block; }
-
-.letsIcon { vertical-align: bottom;  margin-right: 12px;}
-
-.slideOutRight2 { -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-duration: 1s; animation-duration: 1s;
-
--webkit-animation-name: slideOutRight2; animation-name: slideOutRight2; animation-timing-function: linear; }
-
-@keyframes slideOutRight2 {
-
-  from { -webkit-transform: translate3d(100%, 0, 0); transform: translate3d(100%, 0, 0); }
-
-  to { visibility: hidden; -webkit-transform: translate3d(0%, 0, 0);  transform: translate3d(0%, 0, 0); }
-
+.lets {
+    position: fixed;
+    width: 160px;
+    right: -100px;
+    height: 62px;
+    top: 40%;
+    background: #000;
+    border-radius: 3px 0 0 3px;
+    padding: 20px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out 0s;
+    z-index: 9999;
 }
 
-/* END lets */
-.design_devlop_sec6 .slide, .slide_group {
+.letsBuild {
+    width: 160px;
+    right: 0;
+    background: #000;
+    border-radius: 3px 0 0 3px;
+    padding: 20px 20px;
+}
+
+.lets .span {
+    color: #fff;
+    font-family: 'Segoe UI';
+    display: block;
+}
+
+.lets a {
+    color: #fff;
+    font-family: 'Segoe UI';
+    display: none;
+}
+
+.letsBuild .span {
+    display: none;
+}
+
+.letsBuild a {
+    display: block;
+}
+
+.letsIcon {
+    vertical-align: bottom;
+    margin-right: 12px;
+}
+
+.slideOutRight2 {
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: slideOutRight2;
+    animation-name: slideOutRight2;
+    animation-timing-function: linear;
+}
+
+@keyframes slideOutRight2 {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        visibility: hidden;
+        -webkit-transform: translate3d(0%, 0, 0);
+        transform: translate3d(0%, 0, 0);
+    }
+}
+
+.design_devlop_sec6 .slide,
+.slide_group {
     height: 100%;
     width: 100%;
 }
+
 .design_devlop_sec6 .slide {
     visibility: hidden;
     opacity: 0.75;
