@@ -13324,7 +13324,7 @@ h3.MainHeading.new-heading-cont {
     box-shadow: none;
     font-family: FuturaPT-Book;
     font-size: 14px;
-    bottom: -27px;
+    bottom: -7px;
     top: unset;
     right: 0;
     color: red
@@ -22233,7 +22233,8 @@ img {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 10px
+    gap: 10px;
+    margin-bottom: 0;
 }
 
 .dropdownBC a {
@@ -22869,7 +22870,7 @@ button.subscribe-btn {
 
 #newsletternote {
     position: absolute;
-    color: #ffdb37 !important;
+    color: #db271f !important;
     margin: 2px 0 0
 }
 
@@ -23040,7 +23041,7 @@ button.subscribe-btn {
     margin-top: 0;
     margin-bottom: 8px;
     color: #000;
-    font-family: SegoeUI-Bold
+    font-family: SegoeUI-Bold;
 }
 
 .vacancies_table table td p {
@@ -23147,7 +23148,7 @@ button.subscribe-btn {
 .application_form label,
 .overview_sec2 p,
 .upload_files p {
-    font-family: cormorant-garamond
+    font-family: cormorant-garamond;
 }
 
 .overview_sec2 p {
@@ -41469,4 +41470,21 @@ img.oohIconsBox1 {
     visibility: hidden;
     opacity: 0.75;
     position: absolute;
+}
+.highlighted-link:hover {
+    color: unset;
+}
+.new-contact .contactPost .contactFormBox .input-field span, .new-contact .contactPost .contactFormBox .error {
+    position: absolute;
+    background: none;
+    left: 0;
+    border: 0;
+    padding-right: 5px;
+    box-shadow: none;
+    font-family: 'FuturaPT-Book';
+    font-size: 14px;
+    bottom: -6px;
+    top: unset;
+    right: 0;
+    color: #ff0000;
 }
