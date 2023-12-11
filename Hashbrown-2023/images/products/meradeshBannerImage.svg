@@ -1,0 +1,32 @@
+<svg id="Meradesh-Header-Illus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="372.926" height="347.28" viewBox="0 0 372.926 347.28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_212" data-name="Rectangle 212" width="372.926" height="347.28" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="lines" transform="translate(0 0)">
+    <line id="Line_14" data-name="Line 14" y2="289" transform="translate(67 33)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <line id="Line_15" data-name="Line 15" y2="288.196" transform="translate(118.391 33.431)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <line id="Line_16" data-name="Line 16" y2="288.196" transform="translate(169.921)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <line id="Line_17" data-name="Line 17" y2="288.196" transform="translate(221.449 33.431)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <line id="Line_18" data-name="Line 18" y2="288.196" transform="translate(272.979 8.069)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <line id="Line_19" data-name="Line 19" y2="288.196" transform="translate(324.509 34.584)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <line id="Line_20" data-name="Line 20" x1="326.814" transform="translate(46.111 65.132)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <line id="Line_22" data-name="Line 22" x1="329.12" transform="translate(43.806 168.422)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <line id="Line_23" data-name="Line 23" x1="269.752" transform="translate(103.174 220.066)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <line id="Line_24" data-name="Line 24" x1="202.314" transform="translate(170.612 271.711)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <line id="Line_25" data-name="Line 25" x1="283.585" transform="translate(89.341 323.356)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <line id="Line_21" data-name="Line 21" x1="372.926" transform="translate(0 116.777)" fill="none" stroke="#fff" stroke-width="0.5"/>
+  </g>
+  <path id="Path_674" data-name="Path 674" d="M0,0H51.987V51.987H0Z" transform="translate(169.592 168.402)" fill="#ffff41"/>
+  <rect id="Rectangle_203" data-name="Rectangle 203" width="51.803" height="51.803" transform="translate(272.813 116.59)" fill="#ffff41"/>
+  <rect id="Rectangle_206" data-name="Rectangle 206" width="52.895" height="52.895" transform="matrix(0.5, -0.866, 0.866, 0.5, 125.328, 90.141)" fill="#191717" stroke="#3e3d3d" stroke-width="1"/>
+  <rect id="Rectangle_207" data-name="Rectangle 207" width="372.926" height="347.28" fill="none"/>
+  <path id="Path_635" data-name="Path 635" d="M0,0H52.891V52.891H0Z" transform="matrix(0.679, -0.734, 0.734, 0.679, 237.23, 310.548)" fill="#171716"/>
+  <rect id="Rectangle_205" data-name="Rectangle 205" width="50.212" height="51.931" transform="translate(31.864 219.028) rotate(-45)" fill="#191717" stroke="#3e3d3d" stroke-width="0.965"/>
+  <g id="Group_63" data-name="Group 63">
+    <g id="Group_62" data-name="Group 62" clip-path="url(#clip-path)">
+      <rect id="Rectangle_211" data-name="Rectangle 211" width="52.892" height="52.891" transform="matrix(0.679, -0.734, 0.734, 0.679, 237.23, 310.548)" fill="none" stroke="#3e3d3d" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

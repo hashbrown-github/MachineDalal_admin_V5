@@ -1,0 +1,37 @@
+<svg id="Platform-Header-Illus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="468.784" height="530.989" viewBox="0 0 468.784 530.989">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_184" data-name="Rectangle 184" width="468.784" height="530.989" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_182" data-name="Rectangle 182" width="390.55" height="419.361" transform="translate(44.074 65.034)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_45" data-name="Group 45" clip-path="url(#clip-path)">
+    <g id="Group_39" data-name="Group 39">
+      <g id="Group_38" data-name="Group 38" clip-path="url(#clip-path)">
+        <path id="Path_92" data-name="Path 92" d="M.026,530.963" fill="#e7e7e8"/>
+        <path id="Path_93" data-name="Path 93" d="M.026,530.963Z" fill="none" stroke="#040506" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.052"/>
+        <path id="Path_94" data-name="Path 94" d="M260.433,307.4" fill="#e7e7e8"/>
+      </g>
+    </g>
+    <path id="Path_95" data-name="Path 95" d="M260.433,307.4Z" fill="none" stroke="#040506" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.052"/>
+    <g id="Group_44" data-name="Group 44">
+      <g id="Group_43" data-name="Group 43" clip-path="url(#clip-path)">
+        <path id="Path_96" data-name="Path 96" d="M468.758.026" fill="#e7e7e8"/>
+        <path id="Path_97" data-name="Path 97" d="M468.758.026Z" fill="none" stroke="#040506" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.052"/>
+        <g id="Group_42" data-name="Group 42" opacity="0">
+          <g id="Group_41" data-name="Group 41">
+            <g id="Group_40" data-name="Group 40" clip-path="url(#clip-path-4)">
+              <rect id="Rectangle_181" data-name="Rectangle 181" width="390.55" height="419.361" transform="translate(44.074 65.034)" fill="#040405"/>
+            </g>
+          </g>
+        </g>
+        <path id="Path_98" data-name="Path 98" d="M434.074,285.57A123.236,123.236,0,1,1,310.839,162.335,123.235,123.235,0,0,1,434.074,285.57" fill="#040405"/>
+        <path id="Path_99" data-name="Path 99" d="M115.768,75.3v27.986a4.517,4.517,0,0,0,4.779,4.779,5.122,5.122,0,0,0,4.779-4.779V75.3a19.121,19.121,0,0,1,14.34,18.428V265.8a4.779,4.779,0,1,0,9.558,0V189.321a19.119,19.119,0,0,1,38.238,0v95.592a4.779,4.779,0,0,0,9.558,0V208.44a19.119,19.119,0,0,1,38.239,0v95.592a4.778,4.778,0,1,0,9.557,0v-66.9a19.119,19.119,0,0,1,38.239,0v75.523A155.108,155.108,0,0,1,275.4,359.5l-17.192,50.651a80.59,80.59,0,0,0-3.841,25.822v11.463H101.428v-9.558a40.84,40.84,0,0,0-9.558-27.727L74.655,390.083a92.775,92.775,0,0,1-21.02-58.308v-61.2a44.173,44.173,0,0,1,38.238-43.017v95.592a4.779,4.779,0,0,0,9.558,0V93.729A19.123,19.123,0,0,1,115.771,75.3Zm4.779-10.243A28.168,28.168,0,0,0,91.87,93.735V218.251a53.086,53.086,0,0,0-47.8,52.306v61.182a99.336,99.336,0,0,0,22.947,64.038l17.192,20.07A33.45,33.45,0,0,1,91.87,436.89V447.4H263.935V435.939a64.3,64.3,0,0,1,3.842-22.947l17.192-50.674a174.046,174.046,0,0,0,7.657-49.7v-75.5a28.168,28.168,0,0,0-28.678-28.677,28.565,28.565,0,0,0-19.118,7.17v-7.17a28.166,28.166,0,0,0-28.677-28.677,28.584,28.584,0,0,0-19.324,7.336,28.033,28.033,0,0,0-28.488-26.455,28.569,28.569,0,0,0-19.116,7.167V93.729a28.169,28.169,0,0,0-28.677-28.671" fill="#525252" stroke="#191717" stroke-width="4"/>
+        <path id="Path_100" data-name="Path 100" d="M322.042,429.611c0,29.169-22.93,52.815-51.215,52.815s-51.214-23.646-51.214-52.815S242.542,376.8,270.827,376.8s51.215,23.646,51.215,52.815" fill="#1e1d1d"/>
+        <path id="Path_101" data-name="Path 101" d="M322.042,429.611c0,29.169-22.93,52.815-51.215,52.815s-51.214-23.646-51.214-52.815S242.542,376.8,270.827,376.8,322.042,400.442,322.042,429.611Z" fill="none" stroke="#4e4e4e" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

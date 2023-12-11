@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="272" height="510" viewBox="0 0 272 510">
+  <g id="Mobile" transform="translate(-1577 -214)">
+    <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(1577 214)" fill="#191717" stroke="#c3c3c3" stroke-width="1">
+      <rect width="272" height="510" rx="40" stroke="none"/>
+      <rect x="0.5" y="0.5" width="271" height="509" rx="39.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="102" height="7" rx="3.5" transform="translate(1668 709)" fill="#fff"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="6.5" cy="6.5" r="6.5" transform="translate(1706 224)" fill="#fff"/>
+    <g id="Mobile-logo" transform="translate(-33.828 109.4)">
+      <g id="WALLS" transform="translate(1686 319.5)">
+        <path id="Path_1" data-name="Path 1" d="M8.4,40.4,69.952,70.718,129.27,40.4l-57-18.6Z" transform="translate(-8.4 -21.8)" fill="none" stroke="#c3c3c3" stroke-width="1"/>
+        <path id="Path_2" data-name="Path 2" d="M8.4,250.2v54.51l56.153,36.1V280.227Z" transform="translate(-8.4 -222.613)" fill="none" stroke="#c3c3c3" stroke-width="1"/>
+        <path id="Path_3" data-name="Path 3" d="M551.2,279.925v60.888l56.093-36.1V250.2Z" transform="translate(-485.638 -222.613)" fill="none" stroke="#c3c3c3" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
